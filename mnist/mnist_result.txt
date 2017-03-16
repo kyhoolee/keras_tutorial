@@ -1,5 +1,0 @@
-MLP
-Test score:  0.0931736021041
-Test accuracy:  0.9845
-
----------

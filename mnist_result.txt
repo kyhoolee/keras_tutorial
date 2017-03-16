@@ -1,0 +1,37 @@
+MLP
+Test score:  0.0931736021041
+Test accuracy:  0.9845
+
+---------
+CNN
+Test score:  0.0298775824401
+Test accuracy:  0.9897
+
+---------
+GridSearchCV
+
+The paramters of the best model are: 
+{'dense_layer_sizes': [64, 64], 'nb_conv': 3, 'nb_pool': 2, 'nb_epoch': 6, 'nb_filters': 8}
+ 9664/10000 [===========================>..] - ETA: 0sloss : 0.0528075649743
+acc : 0.9824
+
+---------
+Transfer cnn
+Training time: 0:03:07.166243
+Test score:  0.013148385822
+Test accuracy:  0.995329830706
+X_train shape:  (29404, 28, 28, 1)
+29404  train samples
+4861  test samples
+
+Transfer
+Training time: 0:01:17.546407
+Test score:  0.0342472465437
+Test accuracy:  0.989508331509
+
+----------
+CNN
+
+Test score: 0.0374216885292
+Test accuracy: 0.9881
+

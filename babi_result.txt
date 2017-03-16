@@ -1,0 +1,8 @@
+RNN
+'tasks_1-20_v1-2/en/qa2_two-supporting-facts_{}.txt'
+Test loss / test accuracy = 1.7025 / 0.3040
+
+---------------
+MemNN
+'single_supporting_fact_10k'
+Test loss / test accuracy = 1.2967 / 0.5100

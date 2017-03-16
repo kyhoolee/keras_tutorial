@@ -3,7 +3,7 @@ import numpy as np
 np.random.seed(1337)
 
 from keras.preprocessing import sequence
-from keras.model import Sequential
+from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation 
 from keras.layers import Convolution1D, GlobalMaxPooling1D
 from keras.layers import Embedding
@@ -15,7 +15,7 @@ max_features = 5000
 maxlen = 400
 batch_size = 32
 embedding_dims = 50
-nb_filters = 250
+nb_filter = 250
 filter_length = 3
 hidden_dims = 250
 nb_epoch = 2
@@ -28,7 +28,7 @@ print(len(X_test), 'test sequences')
 
 print('Pad sequences (sample x time)')
 X_train = sequence.pad_sequences(X_train, maxlen=maxlen)
-X_test = sequence.pad_sequences(X_test,max_len=maxlen)
+X_test = sequence.pad_sequences(X_test,maxlen=maxlen)
 print('X_train shape:', X_train.shape)
 print('X_test shape:', X_test.shape)
 
@@ -74,4 +74,7 @@ model.fit(X_train, y_train,
 	validation_data=(X_test, y_test))
 
 
-
+score, acc = model.evaluate(X_test, y_test, batch_size=batch_size)
+print('\n')
+print('Test score:', score)
+print('Test accuracy:', acc)

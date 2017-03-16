@@ -1,0 +1,34 @@
+CNN
+Test score: 0.28703468636
+Test accuracy: 0.87892
+
+----------------
+FastText
+Score:  0.286856577797
+Accuracy:  0.88628
+
+----------------
+FastText 2gram
+Score:  0.236114518633
+Accuracy:  0.90532
+
+----------------
+FastText 3gram
+Score:  0.247035632858
+Accuracy:  0.89984
+
+----------------
+LSTM
+Test score: 0.667298052417
+Test accuracy: 0.81788
+
+----------------
+CNN LSTM 
+Score:  0.341061838073
+Accracy:  0.849719994402
+
+
+----------------
+Bidirectional LSTM
+Test score: 0.341061838073
+Test accuracy: 0.849719994402
